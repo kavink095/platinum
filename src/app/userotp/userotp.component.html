@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Verify Account</title>
+</head>
+
+<body>
+    <div class="form-group">
+        <form [formGroup]="formOTP">
+            <div class="form-group col-md-5">
+                <label for="inputOTP">OTP NUMBER</label>
+                <input type="text" formControlName="otpnumber" class="form-control" id="inputOTP"
+                    placeholder="Enter OTP">
+            </div>
+            <button type="submit" (click)="updateUser()" class="btn btn-primary col-md-5">Verify</button>
+        </form>
+    </div>
+</body>
+
+</html>
